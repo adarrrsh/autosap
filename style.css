@@ -14,7 +14,7 @@ li {
 }
 
 p {
-  text-align: justify;
+  /* text-align: justify; */
   color: #000; /* Set the default text color for <p> elements */
 }
 
@@ -22,17 +22,27 @@ p {
   min-height: 90vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.1)),
-    url(/images/image\ 1.svg);
+    url(images/image\ 1.svg);
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
-nav {
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: #285a43; */
+  z-index: 1000; /* Ensures it's above other content */
+}
+
+/* Style for the navigation bar */
+.nav {
   display: flex;
-  padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px; /* Adjust as needed */
 }
 
 nav img {
@@ -231,8 +241,6 @@ nav .fa {
   margin: 20px 0;
   color: #121212;
 }
-.about-us-col .image img {
-}
 
 .about-us-col:hover {
   box-shadow: rgb(119, 119, 119) 0px 0px 10px 0px;
@@ -327,9 +335,6 @@ nav .fa {
   width: 126px;
   height: 126px;
 }
-.benfits-text {
-  /* margin-top: 50px; */
-}
 .benfits-text p {
   padding-inline: 20px;
 }
@@ -338,7 +343,146 @@ nav .fa {
   display: flex;
   margin-top: 100px;
   gap: 10px;
+  margin-bottom: 100px;
 }
 .gallery img {
   place-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* Apply these CSS styles to your testimonials section */
+
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* Style each individual testimonial */
+
+.testi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #337a5b;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 280px;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  /* Adjust this value to control the maximum width of each testimonial */
+}
+
+/* Style the image and name in each testimonial */
+
+.about-testi {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: space-around;
+  text-align: center;
+}
+.about-testi p {
+  white-space: nowrap;
+}
+
+.about-testi img {
+  width: 70px;
+  border-radius: 50%; /* Make the image circular */
+}
+
+/* Style the testimonial text */
+
+.testi-text {
+  text-align: left;
+  /* margin-top: 20px; */
+}
+.cta {
+  min-height: 40vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.1)),
+    url(images/arto-suraj-X7jtnqyn54M-unsplash\ 1.svg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+.cta-left {
+  flex-basis: 50%;
+}
+.cta-left h4 {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 30px;
+  padding-inline: 90px;
+  font-weight: 400;
+}
+.cta-right {
+  flex-basis: 50%;
+}
+.cta-right form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.blurry-background {
+  width: 70%;
+  padding-block: 10px;
+  background: rgba(217, 217, 217, 0.03);
+  backdrop-filter: blur(2.5px); /* Adjust the blur radius as needed */
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+/* Style the email input field */
+.email {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: transparent;
+}
+.submit {
+  padding-inline: 30px;
+  background-color: #285a43;
+  border: #285a43 2px solid;
+  border-radius: 5px;
+}
+footer {
+  background-color: #285a43;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: baseline; */
+  box-sizing: border-box;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .icons {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-links {
+  max-width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  gap: 70px;
+}
+footer .footer-links li a {
+  color: #fff;
+}
+.background-cover2 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
