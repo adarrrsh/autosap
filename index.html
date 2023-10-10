@@ -19,21 +19,23 @@
   <body>
     <!-- header -->
     <section class="header">
-      <nav>
-        <a href="index.html"><img src="images/Group 5.svg" alt="" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hiddenMenu()"></i>
-
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="course.html">Course</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+      <nav class="fixed-nav">
+        <div class="nav">
+          <a href="index.html"><img src="images/Group 5.svg" alt="" /></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hiddenMenu()"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="course.html">Course</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="ShowMenu()"></i>
         </div>
-        <i class="fa fa-bars" onclick="ShowMenu()"></i>
       </nav>
+
       <div class="text-box">
         <h1>Don’t let your beautiful plants die</h1>
         <p>
@@ -104,7 +106,7 @@
     </section>
     <section class="benfits">
       <div class="benfits-col">
-        <img src="/images/Group 1.svg" alt="" />
+        <img src="images/Group 1.svg" alt="" />
       </div>
       <div class="benfits-col grid">
         <div class="grid-item">
@@ -162,18 +164,114 @@
         <img src="images/image 5.svg" alt="" />
       </div>
       <div class="gallery-right">
-        <img src="/images/pexels-cottonbro-studio-4507715 2.svg" alt="" />
-        <img src="/images/pexels-cottonbro-studio-4507715 3.svg" alt="" />
-        <img src="/images/pexels-cottonbro-studio-4507715 4.svg" alt="" />
+        <img src="images/pexels-cottonbro-studio-4507715 2.svg" alt="" />
+        <img src="images/pexels-cottonbro-studio-4507715 3.svg" alt="" />
+        <img src="images/pexels-cottonbro-studio-4507715 4.svg" alt="" />
         <img src="images/pexels-cottonbro-studio-4507715 5.svg" alt="" />
       </div>
     </section>
-    <sections class="testimonials">
+    <section class="testimonials">
       <h2>What do they say about us</h2>
       <div class="row">
-        <div class="testi"></div>
+        <div
+          class="testi"
+          style="background-image: url(images/Zz_Plant\ 1.svg)"
+        >
+          <div class="about-testi">
+            <img src="images/Rectangle (1).svg" alt="" />
+            <h4>Jessica Watson</h4>
+          </div>
+          <div class="testi-text">
+            <p>
+              “ Highly recommend this website for quality flowers and plants.
+              Great prices, timely delivery and excellent customer service. ”
+            </p>
+          </div>
+        </div>
+        <div
+          class="testi"
+          style="background-image: url(images/Bamboo\ 258.svg)"
+        >
+          <div class="about-testi">
+            <img src="images/Rectangle (2).svg" alt="" />
+            <h4>Kate Szu</h4>
+          </div>
+          <div class="testi-text">
+            <p>
+              "Great service, beautiful flowers, timely delivery. Highly
+              recommend."
+            </p>
+          </div>
+        </div>
+        <div
+          class="testi"
+          style="background-image: url(images/Snake_Plant\ 1.png)"
+        >
+          <div class="about-testi">
+            <img src="images/Rectangle.svg" alt="" />
+            <h4>Grace</h4>
+          </div>
+          <div class="testi-text">
+            <p>
+              "I am very happy with my purchase from this website, the plants
+              were healthy and arrived on time.”
+            </p>
+          </div>
+        </div>
       </div>
-    </sections>
+    </section>
+    <section class="cta">
+      <div class="cta-left">
+        <h4>
+          Enter your email address for our mailing Promo or other interesting
+          Things
+        </h4>
+      </div>
+      <div class="cta-right">
+        <form action="">
+          <div class="blurry-background">
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter your email"
+              class="email"
+            />
+          </div>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="background-cover1">
+        <img src="images/Monstera 1.png" alt="" />
+      </div>
+      <div class="footer-text">
+        <h2>Feel Free to Contact us</h2>
+        <ul class="icons">
+          <li>
+            <a href=""><img src="images/Facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="images/Twitter.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="images/Twitter.png" alt="" /></a>
+          </li>
+        </ul>
+        <ul class="footer-links">
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Plant</a></li>
+          <li><a href="">Delivery</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="background-cover2">
+        <img src="images/Fern 1 (1).png" alt="" />
+      </div>
+    </footer>
+
     <script>
       var navLinks = document.getElementById("navLinks");
       function ShowMenu() {
