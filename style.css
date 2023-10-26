@@ -22,7 +22,7 @@ p {
   min-height: 90vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.1)),
-    url(images/image\ 1.svg);
+    url(/images/image\ 1.svg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -404,7 +404,7 @@ nav .fa {
 .cta {
   min-height: 40vh;
   background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.1)),
-    url(images/arto-suraj-X7jtnqyn54M-unsplash\ 1.svg);
+    url(/images/arto-suraj-X7jtnqyn54M-unsplash\ 1.svg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -485,4 +485,168 @@ footer .footer-links li a {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+}
+.sub-header {
+  height: 42vh;
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.1)),
+    url(images/Banner.svg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.sub-header h1 {
+  font-size: 37.5px;
+  font-weight: 400;
+  color: #285a43;
+  background: #fff;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-inline: 20px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+/* product page */
+.product-details {
+  margin: 100px;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.product-col {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.product-col img {
+  flex-basis: 45%;
+}
+.product-about {
+  flex-basis: 45%;
+  display: inline-flex;
+  /* border: 2px solid yellow; */
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: self-start;
+}
+.buy-now {
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #285a43;
+  border-radius: 3px;
+  border: none;
+}
+.product-col:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.product-details h1 span {
+  color: #285a43;
+}
+
+/* Login page */
+body.login {
+  background: url(images/Login\ 5.svg);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.login-text {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 30%;
+}
+
+.login-text-left {
+  text-align: left;
+}
+
+.login-text-left h3 {
+  font-weight: 400;
+}
+
+.login-text-left h1 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.login-text-left h3 span {
+  color: #285a43;
+}
+.login-text-right {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+}
+.login-text-right h5 {
+  color: #777;
+  font-weight: 300;
+}
+.login-text-right h4 {
+  color: #285a43;
+  font-weight: 300;
+}
+
+.form {
+  margin-top: 20px;
+  flex-basis: 60%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  /* border: 2px solid pink; */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-block: 30px;
+}
+
+label {
+  font-weight: 300;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  text-align: right;
+}
+.submit {
+  color: #fff;
+}
+.submit:hover {
+  cursor: pointer;
 }
